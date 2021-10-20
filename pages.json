@@ -1,0 +1,58 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText":"蓝牙模块"
+			}
+		},
+		{
+			"path": "pages/lamp/lamp",
+			"style": {
+				
+			}
+		},	
+		{
+			"path": "pages/children/children",
+			"style": {
+				
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "蓝牙",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#AFAFAF",
+		"selectedColor": "#22AECB",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "90px",
+		"fontSize": "11px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "蓝牙协议ble",
+				"iconPath": "static/tabbar/coaching.png",
+				"selectedIconPath": "static/tabbar/coaching-seleted.png"
+			},
+			{
+				"pagePath": "pages/lamp/lamp",
+				"text": "Native.js蓝牙",
+				"iconPath": "static/tabbar/lamp.png",
+				"selectedIconPath": "static/tabbar/lamp-selected.png"
+			},
+			{
+				"pagePath": "pages/children/children",
+				"text": "蓝牙信息",
+				"iconPath": "static/tabbar/child.png",
+				"selectedIconPath": "static/tabbar/child-selected.png"
+			}
+		]
+	},
+	 //压缩
+	"dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --minimize"
+}
